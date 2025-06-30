@@ -1,13 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using Xunit;
 using LogComponent;
-
-namespace LogComponentTests
+using LogComponent.testing;
+namespace LogComponentTest
 {
-    [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
+        [Fact]
         public void Logger_CreatesNewFile_WhenMidnightIsCrossed()
         {
             // Arrange
@@ -27,6 +26,5 @@ namespace LogComponentTests
             Assert.IsTrue(File.Exists("log_2025-06-30.txt"));
             Assert.IsTrue(File.Exists("log_2025-07-01.txt"));
         }
-
     }
 }

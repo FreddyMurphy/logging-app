@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Threading;
-using LogTest;
-
+using LogComponent;
 namespace Application
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
-			LogInterface logger = new AsyncLogInterface();
+			TimeService timeService = new TimeService();
+			IAsyncLogger logger = new AsyncLogger(timeService);
 
 			for (int i = 0; i < 15; i++)
 			{
@@ -18,7 +18,7 @@ namespace Application
 
 			logger.StopWithFlush();
 
-			LogInterface logger2 = new AsyncLogInterface();
+			IAsyncLogger logger2 = new AsyncLogger(timeService);
 
 			for (int i = 50; i > 0; i--)
 			{

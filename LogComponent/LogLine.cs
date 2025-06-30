@@ -1,4 +1,4 @@
-namespace LogTest
+namespace LogComponent
 {
 	using System;
 	using System.Text;

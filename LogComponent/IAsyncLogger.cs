@@ -1,6 +1,6 @@
-namespace LogTest
+namespace LogComponent
 {
-	public interface LogInterface
+	public interface IAsyncLogger
 	{
 		/// <summary>
 		/// Stop the logging. If any outstadning logs theses will not be written to Log
