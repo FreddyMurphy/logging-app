@@ -28,7 +28,7 @@ namespace Application
 
 			logger2.StopWithoutFlush();
 
-			//Console.ReadLine();
+			Console.ReadLine();
 		}
 	}
 }
