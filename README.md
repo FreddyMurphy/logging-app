@@ -13,5 +13,5 @@ If I had more time I would abstract the file writing into a `IFileWriter`, so it
 
 I would also look into not having to use Thread.Sleep() in the unit tests, as waiting a certain amount of time could waste time. Here I can see that `ManualResetEventSlim` is something which might be worth looking into.
 
-Finally I would also make sure that the solution had proper CI/CD through Github Actions or Azure DevOps pipeline, to make sure that the tests are passing before I can merge to main.
+Finally I would also make sure that the solution had proper CI/CD through Github Actions, to make sure that the tests are passing before I can merge to main.
 
